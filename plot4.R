@@ -20,7 +20,7 @@ with(power.s, {
     plot(Sub_metering_1 ~ as.POSIXct(Time), type = "l", xlab="", ylab="Energy sub metering")
         lines(Sub_metering_2 ~ as.POSIXct(Time), col = "red")
         lines(Sub_metering_3 ~ as.POSIXct(Time), col = "blue")
-    legend("topright",  c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col=c("black", "red", "blue"), lty=1, bty="n")
+    legend("topright",  c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1, bty="n", cex=0.7)
     plot(Global_reactive_power ~ as.POSIXct(Time), type = "l", xlab="datetime", ylab="Global_Reactive_Power")
     
 })
